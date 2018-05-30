@@ -10,7 +10,6 @@ var markers = []
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
-  //initMap();
   fetchNeighborhoods();
   fetchCuisines();
 });
@@ -169,6 +168,9 @@ let updateRestaurants = () => {
   })
 }
 
+/**
+ * Initialize Google map, called from HTML.
+ */
 window.initMap = () => {
   if (typeof google !== 'undefined') {
     let loc = {
@@ -184,5 +186,3 @@ window.initMap = () => {
   }
   updateRestaurants();
 }
-
-
