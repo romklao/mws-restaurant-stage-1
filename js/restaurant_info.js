@@ -3,20 +3,6 @@
 let restaurant;
 var map;
 
-<<<<<<< HEAD
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  initMap();
-});
-
-||||||| merged common ancestors
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  fetchRestaurantFromURL();
-});
-
-=======
->>>>>>> 9dc660f9e4be494fb4579ab20b87588ae857afe6
 /**
  * Initialize Google map, called from HTML.
  */

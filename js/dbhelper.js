@@ -168,26 +168,6 @@ class DBHelper {
     );
     return marker;
   }
-<<<<<<< HEAD
-||||||| merged common ancestors
-
-=======
-}
-
-/* Register ServiceWorker to cache data for the site
- * to allow any page that has been visited is accessible offline
- */
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
->>>>>>> 9dc660f9e4be494fb4579ab20b87588ae857afe6
 }
 
 /* Register ServiceWorker to cache data for the site
