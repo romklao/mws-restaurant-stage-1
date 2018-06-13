@@ -3,11 +3,20 @@
 let restaurant;
 var map;
 
+<<<<<<< HEAD
 
 document.addEventListener('DOMContentLoaded', (event) => {
   initMap();
 });
 
+||||||| merged common ancestors
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  fetchRestaurantFromURL();
+});
+
+=======
+>>>>>>> 9dc660f9e4be494fb4579ab20b87588ae857afe6
 /**
  * Initialize Google map, called from HTML.
  */
@@ -28,6 +37,11 @@ window.initMap = () => {
       }
     }
   });
+}
+
+window.gm_authFailure = () => {
+  const mapView = document.getElementById('map-container');
+  mapView.innerHTML = '<p id="error-map">Authentication Error with Google Map!</p>';
 }
 
 /**

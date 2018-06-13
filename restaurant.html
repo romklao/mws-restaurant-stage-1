@@ -58,13 +58,36 @@
   <!-- End main -->
 
   <!-- Beginning scripts -->
+<<<<<<< HEAD
   <!-- Google Maps -->
   <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFjrHG191N1SW8NPbOkwC3dSFheG78tr4&libraries=places&callback=initMap"></script>
   </script>
+||||||| merged common ancestors
+  <!-- Google Maps -->
+  <script src="config.js"></script>
+  <script>
+    if (typeof config !== 'undefined') {
+      var mykey = config.MY_KEY;
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://maps.googleapis.com/maps/api/js?key=' + mykey + '&libraries=places&callback=initMap';
+        script.setAttribute('defer','');
+        document.body.appendChild(script);
+      }
+      document.addEventListener('DOMContentLoaded', (event) => {
+        loadScript();
+      });
+    }
+  </script>
+=======
+
+>>>>>>> 9dc660f9e4be494fb4579ab20b87588ae857afe6
   <!-- Database helpers -->
   <script src="js/dbhelper.js"></script>
   <!-- Main javascript file -->
   <script src="js/restaurant_info.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?&libraries=places&key=AIzaSyBMB1yHMGPNVKBajvrGRizpMufnD4eN2hk&v=3&callback=initMap"></script>
   <!-- End scripts -->
 
 </body>
